@@ -1,0 +1,59 @@
+clc - clear
+help - pomoc
+ans - odpowiedz
+, - separator
+; - separator, echo off
+who - zmienne
+whos - zmienne i ich wlasciwosci
+matix, array, table, vector, sequence - macierz
+clear zmienna - czysci zmienna
+clear - usuwa wszystkie zmienne
+disp - wyswietla komunikat
+input - wprowadzenie danych
+numeryczny: rzeczywisty, całkowity, zespolone(comlex numbers)
+cast - konwersja
+x, y
+fprintf
+printf
+sprintf
+%i - int
+%f - float
+%c - char
+%s - string
+==============================================
+Tablice
+tab = [1, 2, 3] albo tab = [1 2 3]
+bat = [1; 2; 3]
+tb = [1 2 3; 4 5 6]
+tab = zeros(5, 9)
+tab = ones(5, 9)
+tab = eye(9, 9)
+tab = rand(1, 10)
+===============================================
+>> A = ones(5,5)
+tab = [A, 1+A; 2+A, 3+A]
+
+A =
+
+     1     1     1     1     1
+     1     1     1     1     1
+     1     1     1     1     1
+     1     1     1     1     1
+     1     1     1     1     1
+
+
+tab =
+
+     1     1     1     1     1     2     2     2     2     2
+     1     1     1     1     1     2     2     2     2     2
+     1     1     1     1     1     2     2     2     2     2
+     1     1     1     1     1     2     2     2     2     2
+     1     1     1     1     1     2     2     2     2     2
+     3     3     3     3     3     4     4     4     4     4
+     3     3     3     3     3     4     4     4     4     4
+     3     3     3     3     3     4     4     4     4     4
+     3     3     3     3     3     4     4     4     4     4
+     3     3     3     3     3     4     4     4     4     4
+===================================================================
+ tab = randi([1 49],1,6)
+===================================================================

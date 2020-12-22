@@ -1,0 +1,52 @@
+clc
+clear
+disp('Rownanie kwadratowe: ax^2 +bx +c = 0')
+disp('Pierwiastki rzeczywiste')
+
+a = input('Podaj a = ', 's');%'s' zeby skrypt przezyl
+[a, status] = str2num(a);
+if status == 0
+    disp('Wspolczynnik a nie jest liczba')
+    return
+end
+if isreal(a) == 0
+    disp('"a" nie jest liczba rzeczywista')
+    return
+end
+if a==0
+    disp('Wspolczynnik a nie moze rownac sie 0, koniec programu')
+    return
+end
+
+b = input('Podaj b = ', 's');
+[b, status] = str2num(b);
+if status == 0
+    disp('Wspolczynnik b nie jest liczba')
+    return
+end
+if isreal(b) == 0
+    disp('"b" nie jest liczba rzeczywista')
+    return
+end
+
+c = input('Podaj c = ', 's');
+[c, status] = str2num(c);
+if status == 0
+    disp('Wspolczynnik c nie jest liczba')
+    return
+end
+if isreal(c) == 0
+    disp('"c" nie jest liczba rzeczywista')
+    return
+end
+
+delta = b^2 - 4*a*c;
+if delta<0
+    disp('Delta ujemna - brak pierwiastkow rzeczywistych')
+    return
+end
+pd = sqrt(delta);
+x1 = (-b -pd)/(2*a);
+x2 = (-b +pd)/(2*a);
+fprintf('x1 = %.4f\n', x1)
+fprintf('x2 = %.4f\n', x2)
